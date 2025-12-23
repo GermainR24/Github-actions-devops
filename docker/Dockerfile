@@ -1,5 +1,9 @@
 FROM python:3.12-slim
 
+LABEL maintainer="Germain Choquechambi"
+LABEL github_user="GermainR24"
+LABEL description="Microservicio HTTP con Python diseñado para el laboratorio DevSecOps"
+
 ENV PYTHONDONTWRITEBYTECODE=1     PYTHONUNBUFFERED=1     PIP_NO_CACHE_DIR=1     SERVICE_NAME=python-microservice     PORT=8000
 
 RUN useradd -m appuser

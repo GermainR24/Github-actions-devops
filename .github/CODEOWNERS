@@ -1,0 +1,9 @@
+# Responsables de la lógica de la aplicación y pruebas
+/src/ @GermainR24
+/tests/ @GermainR24
+
+# Responsables de la infraestructura y automatización (CI/CD)
+/.github/workflows/ @GermainR24
+/k8s/ @GermainR24
+/docker/ @GermainR24
+Makefile @GermainR24

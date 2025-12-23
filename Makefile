@@ -10,6 +10,11 @@ IMAGE ?= $(SERVICE):dev
 PY ?= python
 PIP ?= python -m pip
 
+prepare:
+	@mkdir -p artifacts .evidence
+
+pipeline: prepare build unit sast sca sbom scan-image compose-up dast compose-down kind-up kind-load k8s-deploy k8s-portforward smoke attest evidence-pack
+
 # Herramientas necesarias (local-first, todo corre en tu máquina)
 
 ensure-tools:
